@@ -5,7 +5,6 @@
 //  Created by Logan Jones on 11/2/16.
 //
 
-import Foundation
 import OpenGL
 import GLKit
 import Darwin

@@ -6,8 +6,6 @@
 //  Copyright © 2018 SwiftTA. All rights reserved.
 //
 
-import Foundation
-
 struct Palette {
     
     private var colors: [Color]
@@ -68,8 +66,8 @@ extension Palette {
 // MARK:- Simple Color Accessors
 
 extension Palette.Color {
-    static let white = Palette.Color(red: UInt8.max, green: UInt8.max, blue: UInt8.max, alpha: UInt8.max)
-    static let black = Palette.Color(red: UInt8.min, green: UInt8.min, blue: UInt8.min, alpha: UInt8.max)
+    static let white = Palette.Color(red: .max, green: .max, blue: .max, alpha: .max)
+    static let black = Palette.Color(red: .min, green: .min, blue: .min, alpha: .max)
     static let shadow = Palette.Color(red: 0, green: 0, blue: 0, alpha: 100)
 }
 

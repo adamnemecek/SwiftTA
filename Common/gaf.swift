@@ -6,8 +6,6 @@
 //  Copyright © 2016 Logan Jones. All rights reserved.
 //
 
-import Foundation
-
 enum GafFrameEncoding: UInt8 {
     /// The data at `offsetToFrameData` is a raw collection of `width` x `height` bytes.
     /// Once read, the result is an 8-bit per pixel paletted image.

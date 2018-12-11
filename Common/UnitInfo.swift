@@ -6,8 +6,6 @@
 //  Copyright © 2017 Logan Jones. All rights reserved.
 //
 
-import Foundation
-
 struct UnitInfo {
     var name: String = ""
     var side: String = ""

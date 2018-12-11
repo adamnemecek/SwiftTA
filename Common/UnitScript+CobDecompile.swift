@@ -6,9 +6,6 @@
 //  Copyright © 2018 Logan Jones. All rights reserved.
 //
 
-import Foundation
-
-
 extension UnitScript {
     
     func decompile(writingTo output: @escaping (String) -> (), options: CobDecompile.OutputOptions = .defaults) {

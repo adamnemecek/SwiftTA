@@ -6,9 +6,6 @@
 //  Copyright © 2018 Logan Jones. All rights reserved.
 //
 
-import Foundation
-
-
 extension Palette {
     
     static func standardTaPalette(from filesystem: FileSystem) throws -> Palette {

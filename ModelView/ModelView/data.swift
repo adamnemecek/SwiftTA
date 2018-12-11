@@ -5,9 +5,6 @@
 //  Created by Logan Jones on 11/5/16.
 //
 
-import Foundation
-
-
 extension Data {
     
     func subdata(at offset: Int) -> Data {

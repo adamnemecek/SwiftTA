@@ -6,8 +6,6 @@
 //  Copyright © 2017 Logan Jones. All rights reserved.
 //
 
-import Foundation
-
 // MARK:- Size & Point
 
 struct Size2D: Equatable {

@@ -6,7 +6,6 @@
 //  Copyright © 2018 Logan Jones. All rights reserved.
 //
 
-import Foundation
 import GLKit
 
 

@@ -6,8 +6,6 @@
 //  Copyright © 2016 Logan Jones. All rights reserved.
 //
 
-import Foundation
-
 // MARK:- File Read Helpers
 
 extension FileHandle {

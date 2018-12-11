@@ -6,9 +6,6 @@
 //  Copyright © 2018 Logan Jones. All rights reserved.
 //
 
-import Foundation
-
-
 enum MapModel {
     case ta(TaMapModel)
     case tak(TakMapModel)

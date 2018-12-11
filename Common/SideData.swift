@@ -6,9 +6,6 @@
 //  Copyright © 2018 Logan Jones. All rights reserved.
 //
 
-import Foundation
-
-
 struct SideInfo {
     
     var name: String
@@ -61,9 +58,7 @@ extension SideInfo {
 // MARK:- Sequence specializations
 
 extension Sequence where Element == SideInfo {
-    
     func first(withName name: String) -> SideInfo? {
         return self.first(where: { $0.name == name || $0.namePrefix == name })
     }
-    
 }

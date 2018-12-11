@@ -6,8 +6,6 @@
 //  Copyright © 2018 Logan Jones. All rights reserved.
 //
 
-import Foundation
-
 // TODO: Support Unicode for TDF parsing.
 // I tried using Character as the base type but the resulting code ran an order of magnitude slower than the withUnsafeBytes+UInt8 solution.
 
@@ -170,10 +168,10 @@ extension TdfParser {
     
     struct Object {
         var properties: Dictionary<String, String>
-        var subobjects: Dictionary<String, Object>
+        var subobjects: [String: Object]
     }
     
-    func extractAll() -> Dictionary<String, Object> {
+    func extractAll() -> [String: Object] {
         
         let count = data.count
         var token: Token?
@@ -202,7 +200,7 @@ extension TdfParser {
         return levels[0].subobjects
     }
     
-    static func extractAll<File>(from file: File) -> Dictionary<String, Object>
+    static func extractAll<File>(from file: File) -> [String: Object]
         where File: FileReadHandle
     {
         let data = file.readDataToEndOfFile()
@@ -210,7 +208,7 @@ extension TdfParser {
         return parser.extractAll()
     }
     
-    static func extractAll(from data: Data) -> Dictionary<String, Object> {
+    static func extractAll(from data: Data) -> [String: Object] {
         let parser = TdfParser(data)
         return parser.extractAll()
     }

@@ -6,9 +6,6 @@
 //  Copyright © 2018 Logan Jones. All rights reserved.
 //
 
-import Foundation
-
-
 struct MapInfo {
     var name: String
     var properties: [String: String]

@@ -6,8 +6,6 @@
 //  Copyright © 2016 Logan Jones. All rights reserved.
 //
 
-import Foundation
-
 public enum HpiFormat {
     
     public enum HpiVersion: UInt32 {

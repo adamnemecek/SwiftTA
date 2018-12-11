@@ -6,7 +6,6 @@
 //  Copyright © 2017 Logan Jones. All rights reserved.
 //
 
-import Foundation
 import Quartz
 
 class QuickLookViewController: NSViewController {
